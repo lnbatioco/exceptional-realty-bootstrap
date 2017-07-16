@@ -13,3 +13,37 @@ img, video, audio, iframe, table, form {
 .row {
   margin-bottom: 20px;
 }
+
+
+
+/* ////////// C A R O U S E L  S T Y L E S ////////// */
+
+#carousel-example-generic .item img {
+  height: auto;
+}
+
+.carousel-caption p {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {     /* small-sized devices: screen-width / 2 = new height */
+  #carousel-example-generic .item img {
+    height: 384px;
+  }
+}
+
+@media only screen and (min-width: 992px) {     /* medium-sized devices */
+  #carousel-example-generic .item img {
+    height: 496px;
+  }
+
+  .carousel-caption p {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 1200px) {    /* large-sized devices */
+  #carousel-example-generic .item img {
+    height: 600px;
+  }
+}
